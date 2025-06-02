@@ -7,6 +7,7 @@ def quick_sort(arr):
     pivot = arr[len(arr) // 2]
 
     leftArray = [x for x in arr if x < pivot]
+    # case of multiple elements the same as the pivot
     middleArray = [x for x in arr if x == pivot]
     rightArray = [x for x in arr if x > pivot]
     return quick_sort(leftArray) + middleArray + quick_sort(rightArray)
